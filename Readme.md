@@ -57,12 +57,12 @@ Customer-Churn-Prediction/
 │   └── form.html              # HTML input form for FastAPI interface
 │
 ├── src/
-│   └── image.png              # SHAP plots or EDA visualizations
+│   └── image.png              
 │
-├── customer\_churn.pkl         # Serialized AdaBoost model
+├── customer_churn.pkl         # Serialized AdaBoost model
 ├── main.py                    # FastAPI application entry point
-├── customer\_chrn.ipynb        # Jupyter notebook (EDA → Modeling → SHAP)
-├── mock\_churn\_dataset.csv     # Synthetic customer data
+├── customer_chrn.ipynb        # Jupyter notebook (EDA → Modeling → SHAP)
+├── mock_churn_dataset.csv     # Synthetic customer data
 ├── requirements.txt           # Python dependencies
 └── Dockerfile                 # Container configuration
 
