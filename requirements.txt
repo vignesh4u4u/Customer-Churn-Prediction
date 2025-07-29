@@ -1,0 +1,8 @@
+jinja2
+flask
+pandas
+numpy
+uvicorn
+fastapi
+python-multipart
+scikit-learn==1.4.2

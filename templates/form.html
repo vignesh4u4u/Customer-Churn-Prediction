@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Churn Predictor</title>
+</head>
+<body style="margin:0; font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif; background:linear-gradient(135deg,#667eea,#764ba2); height:100vh; display:flex; justify-content:center; align-items:center;">
+
+    <div style="background:#fff; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2); max-width:360px; width:90%; padding:20px; box-sizing:border-box;">
+
+        <h2 style="margin:-20px -20px 20px -20px; background:#004080; color:#fff; padding:15px; text-align:center; border-radius:12px 12px 0 0; font-size:20px;">Customer Churn Predictor</h2>
+
+        <form method="post" action="/predict">
+
+            <label style="display:block; margin-bottom:6px; font-weight:bold; font-size:14px;">Tenure (Months):</label>
+            <input type="number" name="Tenure" required style="width:100%; padding:8px; margin-bottom:12px; border:1px solid #ccc; border-radius:6px; font-size:14px;">
+
+            <label style="display:block; margin-bottom:6px; font-weight:bold; font-size:14px;">Monthly Charges:</label>
+            <input type="number" step="0.01" name="MonthlyCharges" required style="width:100%; padding:8px; margin-bottom:12px; border:1px solid #ccc; border-radius:6px; font-size:14px;">
+
+            <label style="display:block; margin-bottom:6px; font-weight:bold; font-size:14px;">Contract Type:</label>
+            <select name="ContractType" required style="width:100%; padding:8px; margin-bottom:12px; border:1px solid #ccc; border-radius:6px; font-size:14px;">
+                <option value="Month-to-month">Month-to-month</option>
+                <option value="One year">One year</option>
+                <option value="Two year">Two year</option>
+            </select>
+
+            <label style="display:block; margin-bottom:6px; font-weight:bold; font-size:14px;">Usage Metrics:</label>
+            <input type="number" step="0.01" name="UsageMetrics" required style="width:100%; padding:8px; margin-bottom:12px; border:1px solid #ccc; border-radius:6px; font-size:14px;">
+
+            <label style="display:block; margin-bottom:6px; font-weight:bold; font-size:14px;">Support Tickets:</label>
+            <input type="number" name="SupportTickets" required style="width:100%; padding:8px; margin-bottom:16px; border:1px solid #ccc; border-radius:6px; font-size:14px;">
+
+            <button type="submit" style="width:100%; padding:10px; background:#4CAF50; color:#fff; border:none; border-radius:6px; font-size:15px; cursor:pointer;">Submit</button>
+        </form>
+
+        {% if result is not none %}
+        <div style="margin-top:15px; padding:12px; background-color:#e6f7ff; border-left:4px solid #2196F3; font-size:14px;">
+            <strong>Prediction Result:</strong> <b>{{ result }}</b>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
