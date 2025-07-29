@@ -102,7 +102,7 @@ API docs available at: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ```bash
 docker build -t churn-fastapi-app .
-docker run -p 8080:8000 churn-fastapi-app
+docker run -p 8080:8080 churn-fastapi-app
 ```
 
 Then open: [http://localhost:8080](http://localhost:8080)
@@ -111,7 +111,7 @@ Then open: [http://localhost:8080](http://localhost:8080)
 
 ```bash
 docker pull vick4s5s/churn-predictor:v.1
-docker run -p 8080:8000 vick4s5s/churn-predictor:v.1
+docker run -p 8080:8080 vick4s5s/churn-predictor:v.1
 ```
 
 ---
