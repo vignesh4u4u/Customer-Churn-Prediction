@@ -136,10 +136,10 @@ Feature importance was interpreted using SHAP:
 
 ## 📬 Contact
 
-**Author**: Vignesh
-**GitHub**: [https://github.com/vignesh4u4u/Customer-Churn-Prediction](https://github.com/vignesh4u4u/Customer-Churn-Prediction)
-**Email**: [vickys9715@gmail.com](mailto:vickys9715@gmail.com)
-**Docker Hub**: [vick4s5s/churn-predictor\:v.1](https://hub.docker.com/r/vick4s5s/churn-predictor)
+- **Author**: Vignesh
+- **GitHub**: [https://github.com/vignesh4u4u/Customer-Churn-Prediction](https://github.com/vignesh4u4u/Customer-Churn-Prediction)
+- **Email**: [vickys9715@gmail.com](mailto:vickys9715@gmail.com)
+- **Docker Hub**: [vick4s5s/churn-predictor\:v.1](https://hub.docker.com/r/vick4s5s/churn-predictor)
 
 ---
 
